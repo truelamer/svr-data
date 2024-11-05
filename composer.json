@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Svr\\Data\\DataServiceProvider"
+                "Svr\\Data\\src\\DataServiceProvider"
             ]
         }
     },
