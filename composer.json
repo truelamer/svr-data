@@ -12,13 +12,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Svr\\Logs\\": "src/"
+            "Svr\\Data\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Data\\src\\DataServiceProvider"
+                "Svr\\Data\\DataServiceProvider"
             ]
         }
     },
