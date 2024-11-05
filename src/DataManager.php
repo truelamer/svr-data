@@ -9,6 +9,12 @@ use OpenAdminCore\Admin\Auth\Database\Permission;
 use OpenAdminCore\Admin\Auth\Database\Menu;
 use OpenAdminCore\Admin\Extension;
 
+use Svr\Data\Controllers\AnimalsController;
+use Svr\Data\Controllers\ApplicationsController;
+use Svr\Data\Controllers\CompaniesController;
+use Svr\Data\Controllers\CompaniesLocationsController;
+use Svr\Data\Controllers\CompaniesObjectsController;
+
 class DataManager extends Extension
 {
 
@@ -66,7 +72,7 @@ class DataManager extends Extension
                 [
                     'title' => 'Животные',
                     'icon' => 'icon-pastafarianism',
-                    'uri' => 'data/svr_companies',
+                    'uri' => 'data/svr_animals',
                 ],
                 [
                     'title' => 'Заявки',

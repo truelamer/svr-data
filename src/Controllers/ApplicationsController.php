@@ -1,6 +1,6 @@
 <?php
 
-namespace Svr\Controllers\Data;
+namespace Svr\Data\Controllers;
 
 use Svr\Core\Enums\ApplicationStatusEnum;
 use Svr\Core\Models\SystemUsers;
