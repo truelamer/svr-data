@@ -4,7 +4,7 @@ namespace Svr\Data\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Svr\Raw\Seeders;
+use Svr\Data\Seeders;
 
 class DataSeeder extends Seeder
 {
