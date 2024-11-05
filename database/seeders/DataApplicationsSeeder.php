@@ -1,6 +1,6 @@
 <?php
 
-namespace Svr\Data\Database\Seeders;
+namespace Svr\Data\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

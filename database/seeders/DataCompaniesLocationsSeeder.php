@@ -1,6 +1,6 @@
 <?php
 
-namespace Svr\Data\Database\Seeders;
+namespace Svr\Data\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
