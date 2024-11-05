@@ -4,6 +4,7 @@ namespace Svr\Data\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Svr\Raw\Seeders;
 
 class DataSeeder extends Seeder
 {
@@ -11,13 +12,13 @@ class DataSeeder extends Seeder
     {
         DB::statement("SET session_replication_role = 'replica';");
 
-        (new DataCompaniesSeeder())->run();
-        (new DataCompaniesLocationsSeeder())->run();
-        (new DataCompaniesObjectsSeeder())->run();
-        (new DataAnimalsSeeder())->run();
-        (new DataAnimalsCodesSeeder())->run();
-        (new DataApplicationsSeeder())->run();
-        (new DataApplicationsAnimalsSeeder())->run();
+        (new Seeders\DataCompaniesSeeder())->run();
+        (new Seeders\DataCompaniesLocationsSeeder())->run();
+        (new Seeders\DataCompaniesObjectsSeeder())->run();
+        (new Seeders\DataAnimalsSeeder())->run();
+        (new Seeders\DataAnimalsCodesSeeder())->run();
+        (new Seeders\DataApplicationsSeeder())->run();
+        (new Seeders\DataApplicationsAnimalsSeeder())->run();
 
         DB::statement("SET session_replication_role = 'origin';");
     }
