@@ -10,6 +10,8 @@ class DataApplicationsSeeder extends Seeder
 {
     public function run()
     {
+        DB::statement("SET session_replication_role = 'replica';");
+
         DB::table('data.data_applications')->truncate();
 
         DB::table('data.data_applications')->insert([
@@ -12016,5 +12018,7 @@ class DataApplicationsSeeder extends Seeder
 ]);
 
         DB::statement("SELECT setval('data.data_applications_application_id_seq', (SELECT MAX(application_id) from data.data_applications))");
+
+        DB::statement("SET session_replication_role = 'origin';");
     }
 }

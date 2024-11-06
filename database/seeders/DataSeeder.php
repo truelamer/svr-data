@@ -10,8 +10,6 @@ class DataSeeder extends Seeder
 {
     public function run()
     {
-        DB::statement("SET session_replication_role = 'replica';");
-
         (new Seeders\DataCompaniesSeeder())->run();
         (new Seeders\DataCompaniesLocationsSeeder())->run();
         (new Seeders\DataCompaniesObjectsSeeder())->run();
@@ -19,7 +17,5 @@ class DataSeeder extends Seeder
         (new Seeders\DataAnimalsCodesSeeder())->run();
         (new Seeders\DataApplicationsSeeder())->run();
         (new Seeders\DataApplicationsAnimalsSeeder())->run();
-
-        DB::statement("SET session_replication_role = 'origin';");
     }
 }

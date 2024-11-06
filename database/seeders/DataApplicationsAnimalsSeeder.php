@@ -9,6 +9,8 @@ class DataApplicationsAnimalsSeeder extends Seeder
 {
     public function run()
     {
+        DB::statement("SET session_replication_role = 'replica';");
+
         DB::table('data.data_applications_animals')->truncate();
 
         DB::table('data.data_applications_animals')->insert([
@@ -20015,5 +20017,7 @@ class DataApplicationsAnimalsSeeder extends Seeder
         ]);
 
         DB::statement("SELECT setval('data.data_applications_animals_application_animal_id_seq', (SELECT MAX(application_animal_id) from data.data_applications_animals))");
+
+        DB::statement("SET session_replication_role = 'origin';");
     }
 }

@@ -14,6 +14,8 @@ class DataCompaniesObjectsSeeder extends Seeder
      */
     public function run(): void
     {
+        DB::statement("SET session_replication_role = 'replica';");
+
         DB::table('data.data_companies_objects')->truncate();
 
         DB::table('data.data_companies_objects')->insert([
@@ -10020,5 +10022,7 @@ class DataCompaniesObjectsSeeder extends Seeder
         ]);
 
         DB::statement("SELECT setval('data.data_companies_objects_company_object_id_seq', (SELECT MAX(company_object_id) from data.data_companies_objects))");
+
+        DB::statement("SET session_replication_role = 'origin';");
     }
 }
