@@ -12,8 +12,6 @@ class DataAnimalsCodesSeeder extends Seeder
     {
         DB::statement("SET session_replication_role = 'replica';");
 
-        DB::table('data.data_animals_codes')->truncate();
-
         DB::table('data.data_animals_codes')->insert([
 	[
 		"code_id" => "41226",

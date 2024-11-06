@@ -11,8 +11,6 @@ class DataApplicationsAnimalsSeeder extends Seeder
     {
         DB::statement("SET session_replication_role = 'replica';");
 
-        DB::table('data.data_applications_animals')->truncate();
-
         DB::table('data.data_applications_animals')->insert([
             [
                 "application_animal_id" => "725",

@@ -16,8 +16,6 @@ class DataCompaniesSeeder extends Seeder
     {
         DB::statement("SET session_replication_role = 'replica';");
 
-        DB::table('data.data_companies')->truncate();
-
         DB::table('data.data_companies')->insert([
             [
                 "company_id" => "1",

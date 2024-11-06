@@ -16,8 +16,6 @@ class DataCompaniesObjectsSeeder extends Seeder
     {
         DB::statement("SET session_replication_role = 'replica';");
 
-        DB::table('data.data_companies_objects')->truncate();
-
         DB::table('data.data_companies_objects')->insert([
             [
                 "company_object_id" => "3952",
