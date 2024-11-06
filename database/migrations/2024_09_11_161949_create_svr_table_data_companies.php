@@ -48,6 +48,7 @@ return new class extends Migration
                 $table->addColumn('system.system_status_delete', 'company_status_delete')->nullable(false)->default('active')->comment('Статус псевдо-удаленности записи (active - не удалена/deleted - удалена)');
                 $table->timestamp('company_date_update_objects')->nullable(false)->default('2024-08-28 09:00:00')
                     ->comment('Дата последнего обновления поднадзорных объектов компании');
+                $table->integer('company_objects_offset')->nullable(true)->default(0)->comment('offset для обновления ПО');
                 $table->timestamp('company_created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
                     ->comment('Дата создания записи');
                 $table->timestamp('update_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
