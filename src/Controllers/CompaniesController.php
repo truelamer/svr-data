@@ -304,10 +304,10 @@ class CompaniesController extends AdminController
         $form->display('company_date_update_objects', 'company_date_update_objects')
             ->help(trans('svr.updated_at'));
 
-        $form->display('company_created_at', 'company_created_at')
+        $form->display('created_at', 'created_at')
             ->help(trans('svr.created_at'));
 
-        $form->display('update_at', 'update_at')
+        $form->display('updated_at', 'updated_at')
             ->help(trans('svr.updated_at'));
 
         // обработка формы

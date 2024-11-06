@@ -207,8 +207,8 @@ class ApplicationsController extends AdminController
 		$show->field('application_date_horriot', __('svr-data-lang::data.application.application_date_horriot'));
 		$show->field('application_date_complete', __('svr-data-lang::data.application.application_date_complete'));
 		$show->field('application_status', __('svr-data-lang::data.application.application_status'));
-		$show->field('application_created_at', __('svr-data-lang::data.application.application_created_at'));
-		$show->field('update_at', __('svr-data-lang::data.application.update_at'));
+		$show->field('created_at', __('svr-data-lang::data.application.created_at'));
+		$show->field('updated_at', __('svr-data-lang::data.application.updated_at'));
 		return $show;
 	}
 
@@ -262,8 +262,8 @@ class ApplicationsController extends AdminController
 			->options(ApplicationStatusEnum::get_option_list())
 			->default('enabled')->rules('required');
 
-		$form->hidden('application_created_at', __('role_created_at'));
-		$form->hidden('update_at', __('update_at'));
+		$form->hidden('created_at', __('created_at'));
+		$form->hidden('updated_at', __('updated_at'));
 
 		return $form;
 	}

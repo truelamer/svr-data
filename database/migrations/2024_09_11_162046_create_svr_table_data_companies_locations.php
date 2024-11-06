@@ -28,9 +28,9 @@ return new class extends Migration
                 $table->integer('district_id')->nullable(true)->default(null)->comment('ID района из справочника');
                 $table->addColumn('system.system_status', 'location_status')->default('enabled')->comment('Статус записи (активна/не активна)');
                 $table->addColumn('system.system_status_delete', 'location_status_delete')->default('active')->comment('Статус псевдо-удаленности записи (активна - не удалена/не активна - удалена)');
-                $table->timestamp('location_created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
+                $table->timestamp('created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
                     ->comment('Дата создания записи');
-                $table->timestamp('update_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
+                $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
                     'Дата обновления записи'
                 );
             });

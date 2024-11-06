@@ -42,7 +42,7 @@ class DataApplicationsAnimals extends Model
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -73,7 +73,7 @@ class DataApplicationsAnimals extends Model
 		'application_animal_date_horriot',			//* дата отправки в хорриот */
 		'application_animal_date_response',			//* дата получения ответа от хорриот */
 		'application_animal_status',				//* статус заявки ('added', 'deleted', 'sent', 'registered', 'rejected', 'finished') */
-		'application_animal_created_at',			//* дата добавления животного в заявку */
+		'created_at',								//* дата добавления животного в заявку */
 		'application_herriot_application_id',		//* ID заявки хорриота */
 		'application_request_herriot',				//* данные запроса отправки на регистрацию */
 		'application_response_herriot',				//* данные ответа отправки на регистрацию */
@@ -89,7 +89,7 @@ class DataApplicationsAnimals extends Model
 		'application_herriot_send_text_error',		//* Текст ошибки при отправке в Хорриот */
 		'application_herriot_check_text_error',		//* Текст ошибки при проверке статуса регистрации в Хорриот */
 
-		'update_at',								//* дата последнего изменения строки записи */
+		'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 

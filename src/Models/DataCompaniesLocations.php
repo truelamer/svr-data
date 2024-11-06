@@ -42,14 +42,14 @@ class DataCompaniesLocations extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'location_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -80,8 +80,8 @@ class DataCompaniesLocations extends Model
 		'district_id',								//* ID района из справочника
 		'location_status',							//* Статус записи (активна/не активна)
 		'location_status_delete',					//* Статус псевдо-удаленности записи (активна - не удалена/не активна - удалена)
-		'location_created_at',						//* Дата и время создания
-		'update_at',								//* дата последнего изменения строки записи */
+		'created_at',						        //* Дата и время создания
+		'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 

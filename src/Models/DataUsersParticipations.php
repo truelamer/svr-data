@@ -35,14 +35,14 @@ class DataUsersParticipations extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'participation_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -72,8 +72,8 @@ class DataUsersParticipations extends Model
 		'participation_item_id',					//* ID привязки (company_location_id/region_id/district_id)
 		'role_id',									//* ID роли в таблице SYSTEM.SYSTEM_ROLES
 		'participation_status',						//* Статус связки
-		'participation_created_at',					//* Дата и время создания
-		'update_at',								//* дата последнего изменения строки записи */
+		'created_at',					            //* Дата и время создания
+		'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 
@@ -91,7 +91,7 @@ class DataUsersParticipations extends Model
 	 * @var array
 	 */
 	protected $hidden								= [
-		'participation_created_at',
+		'created_at',
 	];
 
 

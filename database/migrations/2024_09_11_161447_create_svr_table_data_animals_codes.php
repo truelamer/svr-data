@@ -44,10 +44,10 @@ return new class extends Migration
                     'фото средства маркирования'
                 );
                 $table->addColumn('system.system_status_delete','code_status_delete')->nullable(false)->default('active')->comment('флаг удаления записи');
-                $table->timestamp('code_created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
+                $table->timestamp('created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
                     'Дата создания записи'
                 );
-                $table->timestamp('update_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
+                $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
                     'Дата обновления записи'
                 );
             });

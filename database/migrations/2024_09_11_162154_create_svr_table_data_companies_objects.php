@@ -29,9 +29,9 @@ return new class extends Migration
                 $table->string('company_object_approval_number', 64)->nullable(false)->comment('Номер');
                 $table->string('company_object_address_view', 512)->nullable(false)->comment('Адрес');
                 $table->boolean('company_object_is_favorite')->nullable(false)->default(false)->comment('Избранный ПО');
-                $table->timestamp('company_object_created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
+                $table->timestamp('created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
                     ->comment('Дата создания записи');
-                $table->timestamp('update_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
+                $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
                     'Дата обновления записи'
                 );
             });

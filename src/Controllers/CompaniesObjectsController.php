@@ -243,10 +243,10 @@ class CompaniesObjectsController extends AdminController
             ->required()
             ->help(__($this->trans . 'company_object_is_favorite'));
 
-        $form->display('company_object_created_at', 'company_object_created_at')
+        $form->display('created_at', 'created_at')
             ->help(__('svr.created_at'));
 
-        $form->display('update_at', 'update_at')
+        $form->display('updated_at', 'updated_at')
             ->help(__('svr.updated_at'));
 
         // обработка формы

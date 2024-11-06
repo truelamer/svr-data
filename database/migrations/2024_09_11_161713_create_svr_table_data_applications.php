@@ -39,10 +39,10 @@ return new class extends Migration
                 $table->addColumn('system.application_status', 'application_status')->index()->nullable(false)->default('created')
                     ->comment("статус заявки ('created', 'prepared', 'sent', 'complete_full', 'complete_partial', 'finished') "
                     );
-                $table->timestamp('application_created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
+                $table->timestamp('created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
                     ->comment('Дата создания записи'
                 );
-                $table->timestamp('update_at')->index()->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
+                $table->timestamp('updated_at')->index()->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
                     ->comment('Дата удаления записи'
                 );
             });

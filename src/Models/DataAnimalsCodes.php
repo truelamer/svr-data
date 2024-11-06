@@ -37,14 +37,14 @@ class DataAnimalsCodes extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'code_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -80,8 +80,8 @@ class DataAnimalsCodes extends Model
 		'code_tool_date_out',						//* дата выбытия маркировки животного */
 		'code_tool_photo',							//* фото средства маркирования */
 		'code_status_delete',						//* статус удаления
-		'code_created_at',							//* дата создания в СВР
-        'update_at',								//* дата последнего изменения строки записи */
+		'created_at',							//* дата создания в СВР
+        'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 
@@ -100,7 +100,7 @@ class DataAnimalsCodes extends Model
 	 * @var array
 	 */
 	protected $hidden								= [
-		'code_created_at',
+		'created_at',
 	];
 
 

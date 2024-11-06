@@ -54,14 +54,14 @@ class DataAnimals extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'animal_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -142,8 +142,8 @@ class DataAnimals extends Model
 		'animal_status',							//* статус животного */
 		'animal_status_delete',						//* статус удаления животного */
 		'animal_repair_status',						//* Флаг починки животного */
-		'animal_created_at',						//* дата создания животного в СВР */
-        'update_at'									//* дата последнего изменения строки записи */
+		'created_at',						//* дата создания животного в СВР */
+        'updated_at'									//* дата последнего изменения строки записи */
 	];
 
 
@@ -161,7 +161,7 @@ class DataAnimals extends Model
 	 * @var array
 	 */
 	protected $hidden								= [
-		'animal_created_at',
+		'created_at',
 	];
 
 

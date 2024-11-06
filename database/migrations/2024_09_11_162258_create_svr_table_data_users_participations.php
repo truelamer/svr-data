@@ -30,9 +30,9 @@ return new class extends Migration
                 );
                 $table->integer('role_id')->nullable(false)->comment('ID роли в таблице SYSTEM.SYSTEM_ROLES');
                 $table->addColumn('system.system_status', 'participation_status')->nullable(false)->default('enabled')->comment('Статус связки');
-                $table->timestamp('participation_created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
+                $table->timestamp('created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))
                     ->comment('Дата создания записи');
-                $table->timestamp('update_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
+                $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment(
                     'Дата обновления записи'
                 );
             });

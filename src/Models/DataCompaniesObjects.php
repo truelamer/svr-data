@@ -35,14 +35,14 @@ class DataCompaniesObjects extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'company_object_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -73,8 +73,8 @@ class DataCompaniesObjects extends Model
 		'company_object_approval_number',			//* Номер
 		'company_object_address_view',				//* Адрес
 		'company_object_is_favorite',				//* Избранный ПО
-		'company_object_created_at',				//* Дата создания
-		'update_at',								//* дата последнего изменения строки записи */
+		'created_at',				                //* Дата создания
+		'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 

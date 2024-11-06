@@ -40,14 +40,14 @@ class DataCompanies extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'company_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -84,8 +84,8 @@ class DataCompanies extends Model
 		'company_status_horriot',					//* Статус первоначального нахождения данных о хозяйстве в хорриот
 		'company_status',							//* Статус записи (enabled - активна/disabled - не активна)
 		'company_status_delete',					//* Статус псевдо-удаленности записи (active - не удалена/deleted - удалена)
-		'company_created_at',						//* Дата и время создания
-		'update_at',								//* дата последнего изменения строки записи */
+		'created_at',								//* Дата и время создания
+		'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 

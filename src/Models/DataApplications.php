@@ -31,14 +31,14 @@ class DataApplications extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= 'application_created_at';
+	const CREATED_AT								= 'created_at';
 
 
 	/**
 	 * Поле даты обновления строки
 	 * @var string
 	 */
-	const UPDATED_AT								= 'update_at';
+	const UPDATED_AT								= 'updated_at';
 
 
 	/**
@@ -63,8 +63,8 @@ class DataApplications extends Model
 		'application_date_horriot',					//* дата отправки в хорриот */
 		'application_date_complete',				//* дата получения ответа из хорриот по всем животным */
 		'application_status',						//* статус заявки */
-		'application_created_at',					//* дата создания строки */
-		'update_at',								//* дата последнего изменения строки записи */
+		'created_at',								//* дата создания строки */
+		'updated_at',								//* дата последнего изменения строки записи */
 	];
 
 

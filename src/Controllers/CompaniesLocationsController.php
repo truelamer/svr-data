@@ -291,10 +291,10 @@ class CompaniesLocationsController extends AdminController
             ->help(trans(strtolower($this->trans . 'location_status_delete')))
             ->default('enabled');
 
-        $form->display('location_created_at', 'location_created_at')
+        $form->display('created_at', 'created_at')
             ->help(__('svr.created_at'));
 
-        $form->display('update_at', 'update_at')
+        $form->display('updated_at', 'updated_at')
             ->help(__('svr.updated_at'));
 
         // обработка формы
