@@ -8,6 +8,8 @@ $ composer require svr/data
 
 $ php artisan migrate --path=vendor/svr/data/database/migrations
 
+$ php artisan db:seed --class=Svr\Data\Seeders\DataSeeder
+
 ```
 ## Добавление пунктов меню.
 ```
