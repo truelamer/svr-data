@@ -35,7 +35,7 @@ class DataApplicationsAnimals extends Model
 	 * Поле даты создания строки
 	 * @var string
 	 */
-	const CREATED_AT								= false;
+	const CREATED_AT								= 'created_at';
 
 
 	/**
@@ -90,6 +90,7 @@ class DataApplicationsAnimals extends Model
 		'application_herriot_check_text_error',		//* Текст ошибки при проверке статуса регистрации в Хорриот */
 
 		'updated_at',								//* дата последнего изменения строки записи */
+		'created_at',								//* дата создания строки записи */
 	];
 
 

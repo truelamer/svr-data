@@ -40,6 +40,7 @@ return new class extends Migration
                 $table->string('application_herriot_send_text_error', 1000)->nullable(true)->default(null)->comment('Текст ошибки при отправке в Хорриот');
                 $table->string('application_herriot_check_text_error', 1000)->nullable(true)->default(null)->comment('Текст ошибки при проверке статуса регистрации в Хорриот');
                 $table->timestamp('updated_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment('дата обновления записи');
+                $table->timestamp('created_at')->nullable(false)->default(DB::raw('CURRENT_TIMESTAMP'))->comment('дата создания записи');
             });
         }
     }
