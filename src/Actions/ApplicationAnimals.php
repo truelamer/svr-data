@@ -12,6 +12,6 @@ class ApplicationAnimals extends RowAction
 
 	public function href()
 	{
-		return "/admin/svr_animals?application_id={$this->getKey()}";
+		return "/admin/data/svr_animals?application_id={$this->getKey()}";
 	}
 }

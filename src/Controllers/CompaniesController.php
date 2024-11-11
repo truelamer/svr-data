@@ -230,7 +230,7 @@ class CompaniesController extends AdminController
             };
         }
         $show->field('link_company_objects',  __($this->trans.'link_company_objects'))->unescape()->as(function (){
-            return "<a href='/admin/svr_companies_objects?company_id=".$this->company_id."' target='_blank'>Открыть список ПО</a>";
+            return "<a href='/admin/data/svr_companies_objects?company_id=".$this->company_id."' target='_blank'>Открыть список ПО</a>";
         });
 
         return $show;

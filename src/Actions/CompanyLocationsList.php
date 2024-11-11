@@ -12,7 +12,7 @@ class CompanyLocationsList extends RowAction
 
     public function href()
     {
-        return "/admin/svr_companies_locations?company_id={$this->getKey()}";
+        return "/admin/data/svr_companies_locations?company_id={$this->getKey()}";
     }
 
 }

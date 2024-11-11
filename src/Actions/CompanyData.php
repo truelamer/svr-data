@@ -12,6 +12,6 @@ class CompanyData extends RowAction
 
     public function href()
     {
-        return "/admin/svr_companies/{$this->row('company_id')}";
+        return "/admin/data/svr_companies/{$this->row('company_id')}";
     }
 }
